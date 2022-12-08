@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Open AI</title>
 </head>
-<body>
-<div id="app">
-    <div class="bg-gray-100">
-        <div class="max-w-3xl mx-auto py-24 flex justify-center">
+<body class="h-screen">
+<div id="app" class="h-full">
+    <div class="bg-gray-100 h-full grid place-items-center">
+        <div class="max-w-[900px] w-full mx-auto flex justify-center px-4">
             <form class="flex flex-col gap-2 w-full">
                 <input class="h-12 px-6 rounded bg-white border border-gray-200" type="text" name="prompt" id="prompt" placeholder='"Apple with a nose"' autocomplete="off" autofocus/>
                 <button type="submit" class="relative bg-gray-800 px-6 py-3 text-center rounded hover:bg-gray-900 transition-color duration-150 ease-in-out">
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<div id="loading-overlay" class="hidden fixed inset-0 bg-white/50 backdrop-blur-md   grid place-items-center">
+<div id="loading-overlay" class="hidden fixed inset-0 bg-white/50 backdrop-blur-md grid place-items-center transition-all duration-300 ease-in-out">
     <img src="./assets/loading.gif" alt="Loading spinner animation" />
 </div>
 <script type="module" src="/main.js"></script>
