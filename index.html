@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Open AI</title>
+</head>
+<body>
+<div id="app">
+    <div class="bg-gray-100">
+        <div class="max-w-3xl mx-auto py-24 flex justify-center">
+            <form class="flex flex-col gap-2 w-full">
+                <input class="h-12 px-6 rounded bg-white border border-gray-200" type="text" name="prompt" id="prompt" placeholder='"Apple with a nose"' autocomplete="off" autofocus/>
+                <button type="submit" class="relative bg-gray-800 px-6 py-3 text-center rounded hover:bg-gray-900 transition-color duration-150 ease-in-out">
+                    <span class="text-white transition-all duration-150 ease-in-out">Generate image</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="loading-overlay" class="hidden fixed inset-0 bg-white/50 backdrop-blur-md   grid place-items-center">
+    <img src="./assets/loading.gif" alt="Loading spinner animation" />
+</div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
